@@ -1,0 +1,6 @@
+docs/
+node_modules/
+images_test/
+test.js
+token.json
+.env
