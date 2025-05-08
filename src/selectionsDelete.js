@@ -37,20 +37,17 @@
  */
 
 /**
+ * @memberof UWUFufuApiWrapper
  * @param {number} id Selection id
- * @param {string} token
  * @returns {Promise<SelectionsDeleteResponse>}
  */
-export function selectionsDelete(id, token) {
+export function selectionsDelete(id) {
     /**
      * @type {RequestInit}
      */
     const opts = {
-        method: "DELETE",
-        headers: {
-            "Authorization": "Bearer " + token,
-        }
+        method: "DELETE"
     }
 
-    return fetch(`https://api.uwufufu.com/v1/selections/${id}`, opts)
+    return this.api(`selections/${id}`, opts);
 }

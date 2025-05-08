@@ -62,26 +62,18 @@ function SelectionsVideoPatchBody(model){
  */
 
 /**
- * 
- * @param {string} token 
+ * @memberof UWUFufuApiWrappers
  * @param {SelectionsVideoPatchBody} model
  * @returns {Promise<SelectionsVideoPatchResponse>}
  */
-export function selectionsVideoPatch(token, model) {
+export function selectionsVideoPatch(model) {
     /**
      * @type {RequestInit}
      */
     const opts = {
         method: "PATCH",
         body: JSON.stringify(new SelectionsVideoPatchBody(model)),
-        headers: {
-            "Authorization": "Bearer " + token,
-            "Content-Type": "application/json"
-        }
     }
 
-    return fetch("https://api.uwufufu.com/v1/selections", opts)
-        .then(function (res) {
-            return res.json()
-        })
+    return this.api("selections", opts)
 }

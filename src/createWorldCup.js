@@ -1,6 +1,6 @@
 /**
  * {
- * "id":0,
+ *  "id":0,
  *  "title":"Worlcup name",
  *  "description":"Worldcup description",
  *  "visibility":"IS_CLOSED",
@@ -68,25 +68,17 @@ function CreateWorldCupBody(model) {
 
 /**
  * Pega infirmações sobre o usuário.
- * @param {string} token token para acessar a api.
+ * @memberof UWUFufuApiWrapper
  * @param {CreateWorldCupBody} model
  * @returns {Promise<CreateWorldCupResponse>}
  */
-export function createWorldCup(token, model) {
+export function createWorldCup(model) {
     /**
     * @type {RequestInit}
     */
     const opts = {
-        method: "POST",
-        body: JSON.stringify(new CreateWorldCupBody(model)),
-        headers: {
-            "Authorization": "Bearer " + token,
-            "Content-Type": "application/json"
-        }
+        body: JSON.stringify(new CreateWorldCupBody(model))
     }
 
-    return fetch("https://api.uwufufu.com/v1/games", opts)
-        .then(function (res) {
-            return res.json()
-        })
+    return this.api("games", opts)
 }

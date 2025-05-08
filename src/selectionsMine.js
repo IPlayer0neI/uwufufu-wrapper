@@ -25,28 +25,21 @@
  */
 
 /**
- * 
+ * @memberof UWUFufuApiWrapper
  * @param {number} id Selection id
- * @param {string} token
  * @param {number} [page=1]  Selected page
  * @param {number} [perPage=10] Data per page
  * @param {string} [keyword=""] Text for search
  * @param {"name"|"createdAt"|"winLossRatio"|"finalWinLossRatio"} [sortBy="name"] Ordering form
  * @returns {Promise<SelectionsMineResponse>}
  */
-export function selectionsMine(id, token, page, perPage, keyword, sortBy) {
+export function selectionsMine(id, page, perPage, keyword, sortBy) {
     /**
      * @type {RequestInit}
      */
     const opts = {
-        method: "GET",
-        headers: {
-            "Authorization": "Bearer " + token,
-        }
+        method: "GET"
     }
 
-    return fetch(`https://api.uwufufu.com/v1/selections/mine?worldcupId=${id}&page=${page}&perPage=${perPage}&keyword=${keyword}&sortBy=${sortBy}`, opts)
-        .then(function (res) {
-            return res.json()
-        })
+    return this.api(`selections/mine?worldcupId=${id}&page=${page}&perPage=${perPage}&keyword=${keyword}&sortBy=${sortBy}`, opts)
 }

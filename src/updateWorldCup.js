@@ -108,26 +108,19 @@ function UpdateWorldCupBody(model) {
 
 /**
  * Pega infirmações sobre o usuário.
- * @param {number} id
- * @param {string} token token para acessar a api.
+ * @memberof UWUFufuApiWrapper
+ * @param {number} id Worldcup id
  * @param {UpdateWorldCupBody} model
  * @returns {Promise<UpdateWorldCupResponse>}
  */
-export function updateWorldCup(id, token, model) {
+export function updateWorldCup(id, model) {
     /**
     * @type {RequestInit}
     */
     const opts = {
         method: "PUT",
-        body: JSON.stringify(new UpdateWorldCupBody(model)),
-        headers: {
-            "Authorization": "Bearer " + token,
-            "Content-Type": "application/json"
-        }
+        body: JSON.stringify(new UpdateWorldCupBody(model))
     }
 
-    return fetch(`https://api.uwufufu.com/v1/games/${id}`, opts)
-        .then(function (res) {
-            return res.json()
-        })
+    return this.api(`games/${id}`, opts);
 }

@@ -23,13 +23,13 @@
  */
 
 /** 
+ * @memberof UWUFufuApiWrapper
  * @param {number} id Worldcup id
- * @param {string} token 
  * @param {Blob} image Image blob
  * @param {string} imageName Image name
  * @returns {Promise<SelectionsImageResponse>}
  */
-export function selectionsImage(id, token, image, imageName) {
+export function selectionsImage(id, image, imageName) {
     const coverFormDataBody = new FormData();
     coverFormDataBody.append("file", image, imageName);
     coverFormDataBody.append("type", "selection");
@@ -39,15 +39,8 @@ export function selectionsImage(id, token, image, imageName) {
      * @type {RequestInit}
      */
     const opts = {
-        method: "POST",
-        body: coverFormDataBody,
-        headers: {
-            "Authorization": "Bearer " + token,
-        }
+        body: coverFormDataBody
     }
 
-    return fetch("https://api.uwufufu.com/v1/selections/image", opts)
-        .then(function (res) {
-            return res.json()
-        })
+    return this.api("selections/image", opts)
 }

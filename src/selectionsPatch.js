@@ -62,25 +62,18 @@ function SelectionsPatchBody(model) {
 
 /**
  * Para atualizar uma imagem, é necessário criar a imagem como cover e adicona-la no resourceUrl 
- * @param {string} token 
+ * @memberof UWUFufuApiWrapper
  * @param {SelectionsPatchBody} model 
  * @returns {Promise<SelectionsPatchResponse>}
  */
-export function selectionsPatch(token, model) {
+export function selectionsPatch(model) {
     /**
      * @type {RequestInit}
      */
     const opts = {
         method: "PATCH",
         body: JSON.stringify(new SelectionsPatchBody(model)),
-        headers: {
-            "Authorization": "Bearer " + token,
-            "Content-Type": "application/json"
-        }
     }
 
-    return fetch("https://api.uwufufu.com/v1/selections", opts)
-        .then(function (res) {
-            return res.json()
-        })
+    return this.api("selections", opts)
 }

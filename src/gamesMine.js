@@ -27,24 +27,18 @@
  */
 
 /**
- * @param {string} token token para acessar a api.
+ * @memberof UWUFufuApiWrapper
  * @param {number} [page=1] Selected page
  * @param {number} [perPage=15] Data per page
  * @returns {Promise<GamesMineResponse>}
  */
-export function gamesMine(token, page, perPage) {
+export function gamesMine(page, perPage) {
     /**
      * @type {RequestInit}
      */
     const opts = {
-        method: "GET",
-        headers: {
-            "Authorization": "Bearer " + token,
-        }
+        method: "GET"
     }
 
-    return fetch(`https://api.uwufufu.com/v1/games/mine?page=${page}&perPage=${perPage}`, opts)
-        .then(function (res) {
-            return res.json()
-        })
+    return this.api(`games/mine?page=${page}&perPage=${perPage}`, opts);
 }

@@ -6,12 +6,12 @@
  */
 
 /** 
- * @param {string} token 
+ * @memberof UWUFufuApiWrapper
  * @param {Blob} cover Image blob
  * @param {string} covername File name
  * @returns {Promise<ImagesResponse>}
  */
-export function images(token, cover, coverName) {
+export function images(cover, coverName) {
     const coverFormDataBody = new FormData();
     coverFormDataBody.append("file", cover, coverName);
     coverFormDataBody.append("type", "cover");
@@ -21,15 +21,8 @@ export function images(token, cover, coverName) {
      * @type {RequestInit}
      */
     const opts = {
-        method: "POST",
-        body: coverFormDataBody,
-        headers: {
-            "Authorization": "Bearer " + token
-        }
+        body: coverFormDataBody
     }
 
-    return fetch("https://api.uwufufu.com/v1/images", opts)
-        .then(function (res) {
-            return res.json()
-        })
+    return this.api("images", opts);
 }

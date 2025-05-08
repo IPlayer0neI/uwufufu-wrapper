@@ -19,23 +19,17 @@
  */
 
 /**
+ * @memberof UWUFufuApiWrapper
  * @param {number} id Worldcup id
- * @param {string} token token para acessar a api.
  * @returns {Promise<GamesIdMineResponse>}
  */
-export function gamesIdMine(id, token) {
+export function gamesIdMine(id) {
     /**
      * @type {RequestInit}
      */
     const opts = {
-        method: "GET",
-        headers: {
-            "Authorization": "Bearer " + token,
-        }
+        method: "GET"
     }
 
-    return fetch(`https://api.uwufufu.com/v1/games/${id}/mine`, opts)
-        .then(function (res) {
-            return res.json()
-        })
+    return this.api(`games/${id}/mine`, opts)
 }

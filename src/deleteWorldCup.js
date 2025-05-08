@@ -5,22 +5,17 @@
 
 /**
  * Pega infirmações sobre o usuário.
- * @param {number} token token para acessar a api.
+ * @memberof UWUFufuApiWrapper
+ * @param {number} id Worldcup id
  * @returns {Promise<DeletedWorldCupResponse>}
  */
-export function deleteWorldCup(id, token) {
+export function deleteWorldCup(id) {
     /**
     * @type {RequestInit}
     */
     const opts = {
-        method: "DELETE",
-        headers: {
-            "Authorization": "Bearer " + token,
-        }
+        method: "DELETE"
     }
 
-    return fetch(`https://api.uwufufu.com/v1/games/${id}`, opts)
-        .then(function (res) {
-            return res.json()
-        })
+    return this.api(`games/${id}`, opts)
 }

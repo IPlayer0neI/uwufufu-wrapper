@@ -11,22 +11,16 @@
  */
 
 /**
- * @param {string} token 
+ * @memberof UWUFufuApiWrapper
  * @returns {Promise<MeReturn>}
  */
-export function me(token) {
+export function me() {
     /**
      * @type {RequestInit}
      */
     const opts = {
         method: "GET",
-        headers: {
-            "Authorization": "Bearer " + token
-        }
     }
 
-    return fetch("https://api.uwufufu.com/v1/auth/me", opts)
-        .then(function (res) {
-            return res.json()
-        })
+    return this.api("auth/me", opts)
 }
