@@ -33,7 +33,7 @@
  * @param {"name"|"createdAt"|"winLossRatio"|"finalWinLossRatio"} [sortBy="name"] Ordering form
  * @returns {Promise<SelectionsMineResponse>}
  */
-export function selectionsMine(id, page, perPage, keyword, sortBy) {
+export function selectionsMine(id, page = 1, perPage = 10, keyword = "", sortBy = "name") {
     /**
      * @type {RequestInit}
      */

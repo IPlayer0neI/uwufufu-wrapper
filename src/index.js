@@ -1,5 +1,6 @@
 import { createWorldCup } from "./createWorldCup.js"
 import { deleteWorldCup } from "./deleteWorldCup.js"
+import { games } from "./games.js"
 import { gamesIdMine } from "./gamesIdMine.js"
 import { gamesMine } from "./gamesMine.js"
 import { images } from "./images.js"
@@ -14,7 +15,7 @@ import { selectionsVideoDelete } from "./selectionsVideoDelete.js"
 import { selectionsVideoPatch } from "./selectionsVideoPatch.js"
 import { updateWorldCup } from "./updateWorldCup.js"
 
-export { fileToBlob } from "./utils/fileToBlob.js"
+import { fileToBlob } from "./utils/fileToBlob.js"
 
 /**
  * @class
@@ -81,4 +82,6 @@ export function UWUFufuApiWrapper(token, consoleApiResponse) {
     this.selectionsVideoDelete = selectionsVideoDelete;
     this.selectionsVideoPatch = selectionsVideoPatch;
     this.updateWorldCup = updateWorldCup;
+    this.games = games;
+    this.fileToBlob = fileToBlob;
 }

@@ -32,7 +32,7 @@
  * @param {number} [perPage=15] Data per page
  * @returns {Promise<GamesMineResponse>}
  */
-export function gamesMine(page, perPage) {
+export function gamesMine(page = 1, perPage = 15) {
     /**
      * @type {RequestInit}
      */
