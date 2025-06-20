@@ -1,2 +1,2 @@
 Handle uwufufu games locally.
-For some documentation create installle package and create a jsdoc documentation
+For some documentation use install the package and create a documentation with jsdoc.
