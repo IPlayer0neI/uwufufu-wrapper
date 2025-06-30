@@ -61,7 +61,8 @@ function SelectionsPatchBody(model) {
  */
 
 /**
- * Para atualizar uma imagem, é necessário criar a imagem como cover e adicona-la no resourceUrl 
+ * Change a selection.
+ * To update an image, you need to create the image as a cover and add it to the resourceUrl.
  * @memberof UWUFufuApiWrapper
  * @param {SelectionsPatchBody} model 
  * @returns {Promise<SelectionsPatchResponse>}

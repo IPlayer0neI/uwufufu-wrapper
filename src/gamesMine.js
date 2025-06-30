@@ -27,6 +27,7 @@
  */
 
 /**
+ * Pass user games
  * @memberof UWUFufuApiWrapper
  * @param {number} [page=1] Selected page
  * @param {number} [perPage=15] Data per page

@@ -107,7 +107,7 @@ function UpdateWorldCupBody(model) {
  */
 
 /**
- * Pega infirmações sobre o usuário.
+ * Update a worldcup
  * @memberof UWUFufuApiWrapper
  * @param {number} id Worldcup id
  * @param {UpdateWorldCupBody} model

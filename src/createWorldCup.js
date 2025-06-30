@@ -67,7 +67,7 @@ function CreateWorldCupBody(model) {
  */
 
 /**
- * Pega infirmações sobre o usuário.
+ * Creation of a worldcup
  * @memberof UWUFufuApiWrapper
  * @param {CreateWorldCupBody} model
  * @returns {Promise<CreateWorldCupResponse>}

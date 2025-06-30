@@ -1,7 +1,6 @@
 import fs from "fs"
 
 /**
- * 
  * @param {string} path Image path
  * @param {string} type Image type
  * @returns {Blob}

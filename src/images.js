@@ -6,6 +6,7 @@
  */
 
 /** 
+ * Send a blob image to the api
  * @memberof UWUFufuApiWrapper
  * @param {Blob} cover Image blob
  * @param {string} covername File name

@@ -4,7 +4,7 @@
  */
 
 /**
- * Pega infirmações sobre o usuário.
+ * Exclusion from a worldcup
  * @memberof UWUFufuApiWrapper
  * @param {number} id Worldcup id
  * @returns {Promise<DeletedWorldCupResponse>}

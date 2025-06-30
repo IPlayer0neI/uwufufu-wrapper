@@ -4,7 +4,7 @@
  */
 
 /**
- * Função para login no uwufufu.
+ * Pass the API token
  * @memberof UWUFufuApiWrapper
  * @param {string} email
  * @param {string} password
@@ -21,5 +21,9 @@ export function login(email, password) {
         })
     }
 
-    return this.api("auth/login", opts);
+    return this.api("auth/login", opts)
+        .then((res) => {
+            this.token = res.accessToken
+            return res
+        });
 }
