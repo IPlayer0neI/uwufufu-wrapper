@@ -7,7 +7,8 @@
     "write-token": "node update-token.js",
     "docs": "jsdoc  -c jsdoc.json",
     "build": "webpack --config webpack.bundle.js",
-    "mal": "src/standard_utilities/MyAnimeList/index.js"
+    "mal": "src/standard_utilities/MyAnimeList/index.js",
+    "tsddoc": "jsdoc  -c tsddoc.json -r"
   },
   "keywords": [],
   "author": "",
@@ -21,5 +22,8 @@
     "jsdoc": "^4.0.4",
     "webpack": "^5.99.8",
     "webpack-cli": "^6.0.1"
+  },
+  "dependencies": {
+    "tsd-jsdoc": "^2.5.0"
   }
 }

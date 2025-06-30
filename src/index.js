@@ -19,7 +19,7 @@ import { fileToBlob } from "./utils/fileToBlob.js"
 
 /**
  * @class
- * @namespace
+ * @namespace UWUFufuApiWrapper
  * @param {string} token 
  * @param {boolean} consoleApiResponse
  */
