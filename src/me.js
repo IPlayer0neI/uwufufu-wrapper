@@ -11,7 +11,7 @@
  */
 
 /**
- * Pass user information
+ * Pass user information.
  * @memberof UWUFufuApiWrapper
  * @returns {Promise<MeReturn>}
  */

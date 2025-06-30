@@ -37,7 +37,7 @@
  */
 
 /**
- * Delete a specific selection
+ * Delete a specific selection.
  * @memberof UWUFufuApiWrapper
  * @param {number} id Selection id
  * @returns {Promise<SelectionsDeleteResponse>}

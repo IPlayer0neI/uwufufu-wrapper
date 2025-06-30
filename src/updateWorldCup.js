@@ -107,7 +107,7 @@ function UpdateWorldCupBody(model) {
  */
 
 /**
- * Update a worldcup
+ * Update a worldcup.
  * @memberof UWUFufuApiWrapper
  * @param {number} id Worldcup id
  * @param {UpdateWorldCupBody} model

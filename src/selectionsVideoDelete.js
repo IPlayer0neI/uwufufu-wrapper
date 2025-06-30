@@ -37,7 +37,7 @@
  */
 
 /**
- * Deletes a selection
+ * Delete a video selection.
  * @memberof UWUFufuApiWrapper
  * @param {number} id Selection id
  * @returns {Promise<SelectionsVideoResponseDelete>}

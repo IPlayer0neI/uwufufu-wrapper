@@ -19,7 +19,7 @@
  */
 
 /**
- * Pass a specific user's worldcup
+ * Pass a specific user's worldcup.
  * @memberof UWUFufuApiWrapper
  * @param {number} id Worldcup id
  * @returns {Promise<GamesIdMineResponse>}

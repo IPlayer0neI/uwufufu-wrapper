@@ -23,7 +23,7 @@
  */
 
 /** 
- * Create an image selection
+ * Create an image selection.
  * @memberof UWUFufuApiWrapper
  * @param {number} id Worldcup id
  * @param {Blob} image Image blob

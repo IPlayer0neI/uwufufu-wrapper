@@ -4,7 +4,7 @@
  */
 
 /**
- * Exclusion from a worldcup
+ * Delete a worldcup.
  * @memberof UWUFufuApiWrapper
  * @param {number} id Worldcup id
  * @returns {Promise<DeletedWorldCupResponse>}

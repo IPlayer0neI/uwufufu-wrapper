@@ -25,7 +25,7 @@
  */
 
 /**
- * Pass the selection of a certain worldcup
+ * Pass the selections of a certain worldcup.
  * @memberof UWUFufuApiWrapper
  * @param {number} id Selection id
  * @param {number} [page=1]  Selected page

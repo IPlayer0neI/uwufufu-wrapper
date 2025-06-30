@@ -1,5 +1,5 @@
 /**
- * Search for worldcups available for play
+ * Search for worldcups available for play.
  * @memberof UWUFufuApiWrapper
  * @param {number} [page=1]  Selected page
  * @param {number} [perPage=10] Data per page

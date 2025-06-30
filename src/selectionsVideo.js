@@ -52,7 +52,7 @@ function SelectionsVideoBody(model) {
  */
 
 /** 
- * Create a video selection
+ * Create a video selection.
  * @memberof UWUFufuApiWrapper
  * @param {SelectionsVideoBody} model
  * @returns {Promise<SelectionsVideoResponse>}

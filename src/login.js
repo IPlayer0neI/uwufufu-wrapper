@@ -1,10 +1,10 @@
 /**
  * @typedef {object} LoginResponse
- * @property {string} accessToken token para acessar a api.
+ * @property {string} accessToken token 
  */
 
 /**
- * Pass the API token
+ * Pass the API token.
  * @memberof UWUFufuApiWrapper
  * @param {string} email
  * @param {string} password

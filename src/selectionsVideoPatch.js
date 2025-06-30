@@ -62,7 +62,7 @@ function SelectionsVideoPatchBody(model){
  */
 
 /**
- * Change a video selection
+ * Change a video selection.
  * @memberof UWUFufuApiWrappers
  * @param {SelectionsVideoPatchBody} model
  * @returns {Promise<SelectionsVideoPatchResponse>}
