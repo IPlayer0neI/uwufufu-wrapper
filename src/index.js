@@ -19,11 +19,10 @@ import { fileToBlob } from "./utils/fileToBlob.js"
 
 /**
  * @class
- * @namespace UWUFufuApiWrapper
  * @param {string} token 
  * @param {boolean} consoleApiResponse
  */
-export default function UWUFufuApiWrapper(token, consoleApiResponse) {
+function UWUFufuApiWrapper(token, consoleApiResponse) {
     this.token = token || null;
     this.notBodyMethod = {
         "GET": "GET",
@@ -85,3 +84,5 @@ export default function UWUFufuApiWrapper(token, consoleApiResponse) {
     this.games = games;
     this.fileToBlob = fileToBlob;
 }
+
+export default UWUFufuApiWrapper
