@@ -23,7 +23,7 @@ import { fileToBlob } from "./utils/fileToBlob.js"
  * @param {string} token 
  * @param {boolean} consoleApiResponse
  */
-export function UWUFufuApiWrapper(token, consoleApiResponse) {
+export default function UWUFufuApiWrapper(token, consoleApiResponse) {
     this.token = token || null;
     this.notBodyMethod = {
         "GET": "GET",

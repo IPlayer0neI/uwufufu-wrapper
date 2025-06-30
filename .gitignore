@@ -4,3 +4,4 @@ images_test/
 test.js
 token.json
 .env
+dist/

@@ -6,20 +6,19 @@
     "test": "node test.js",
     "write-token": "node update-token.js",
     "docs": "jsdoc  -c jsdoc.json",
-    "build": "webpack --config webpack.bundle.js"
+    "build": "webpack --config webpack.bundle.js",
+    "mal": "src/standard_utilities/MyAnimeList/index.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
-  "dependencies": {
-    "dotenv": "^16.5.0",
-    "jsdoc": "^4.0.4"
-  },
   "devDependencies": {
     "@babel/core": "^7.27.1",
     "@babel/preset-env": "^7.27.2",
     "babel-loader": "^10.0.0",
+    "dotenv": "^16.5.0",
+    "jsdoc": "^4.0.4",
     "webpack": "^5.99.8",
     "webpack-cli": "^6.0.1"
   }
