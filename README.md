@@ -1,17 +1,17 @@
-# API Wrapper Node.js
+# Uwuwfufu API Wrapper
 
-A Node.js wrapper for the uwuwfufu api that simplifies access to its resources and endpoints.
+A api wrapper for the uwuwfufu api that simplifies access to its resources and endpoints.
 
 ## 📦 Installation
 
 ```
-npm install api-wrapper-name
+npm install uwufufu-wrapper
 ```
 
 or
 
 ```
-yarn add api-wrapper-name
+yarn add uwufufu-wrapper
 ```
 
 ## 🚀 Basic Usage
