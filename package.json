@@ -10,8 +10,8 @@
     "mal": "src/standard_utilities/MyAnimeList/index.js",
     "tsddoc": "jsdoc  -c tsddoc.json -r"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["uwufufu", "api", "wrapper", "uwufufu-api", "uwufufu-wrapper"],
+  "author": "A api wrapper for the uwuwfufu api that simplifies access to its resources and endpoints.",
   "license": "ISC",
   "description": "",
   "devDependencies": {
