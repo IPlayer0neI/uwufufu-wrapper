@@ -41,7 +41,7 @@ The wrapper accepts the following options:
 - `api.login(email, password)` — Pass an API token.
 - `api.me(email, password)` — Pass user information.
 - `api.games(page = 1, perPage = 10, sortBy = "popularity", search = "", includeNsfw = false, locale, categories)` — Search for worldcups available for play.
-- `api.gamesMine(page = 1, perPage = 15)` — Pass an API token
+- `api.gamesMine(page = 1, perPage = 15)` — Pass user games.
 - `api.gamesIdMine(id)` — Pass a specific user's worldcup.
 - `api.createWorldCup(model)` — Creation of a worldcup.
 
